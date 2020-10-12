@@ -17,7 +17,7 @@ CONVENTIONAL_PRODUCE = [
 ]
 
 def assembled_matrix
-  grocery_produce=[
+  [
     CONVENTIONAL_PRODUCE,#keeping this on top makes it the zeroeth array.
     ORGANIC_PRODUCE
   ]# Build an array that contains both of the above arrays
@@ -27,6 +27,7 @@ def assembled_matrix
 end
 
 def sorted_matrix
+    mat=[CONVENTIONAL_PRODUCE.sort,ORGANIC_PRODUCE.sort]
   # Using Array literal syntax only, build another nested array that
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
